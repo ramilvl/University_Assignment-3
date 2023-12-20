@@ -1,0 +1,15 @@
+{
+    "flashCards": [
+      {
+        "id": 1,
+        "front": "What is my name?",
+        "back": "Ramil"
+      },
+      {
+        "id": 2,
+        "front": "What is my surname?",
+        "back": "Valiyev"
+      }
+    ]
+  }
+  
