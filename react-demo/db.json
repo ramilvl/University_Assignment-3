@@ -2,13 +2,13 @@
     "flashCards": [
       {
         "id": 1,
-        "front": "What is my name?",
-        "back": "Ramil"
+        "front": "First Question",
+        "back": "A"
       },
       {
         "id": 2,
-        "front": "What is my surname?",
-        "back": "Valiyev"
+        "front": "Second Question",
+        "back": "B"
       }
     ]
   }
