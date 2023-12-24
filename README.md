@@ -1,3 +1,5 @@
 # Web - Assignment 3
 
-status: incomplete
+* Part 1
+* Part 2
+* Part 3
