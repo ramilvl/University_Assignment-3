@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import '../style/flashCardStyles.css';
 
-const FlashCard = ({ frontContent, backContent }) => {
+const FlashCard = ({ id, frontContent, backContent, onUpdateCard }) => {
   const [isFlipped, setFlipped] = useState(false);
   const [lastModified, setLastModified] = useState(new Date());
-  const [cardStatus, setCardStatus] = useState(''); 
+  const [cardStatus, setCardStatus] = useState('');
+
   const handleClick = () => {
     setFlipped(!isFlipped);
     setLastModified(new Date());
@@ -13,6 +14,7 @@ const FlashCard = ({ frontContent, backContent }) => {
   const handleStatusChange = (newStatus) => {
     setCardStatus(newStatus);
     setLastModified(new Date());
+    onUpdateCard(id, { id, frontContent, backContent, status: newStatus, updatedAt: new Date() });
   };
 
   return (
