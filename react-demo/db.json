@@ -1,6 +1,14 @@
 {
   "flashCards": [
-    {"id": 1, "frontContent": "Question 1", "backContent": "Answer 1"},
-    {"id": 2, "frontContent": "Question 2", "backContent": "Answer 2"}
+    {
+      "id": 1,
+      "question": "First Question",
+      "answer": "First Answer"
+    },
+    {
+      "id": 2,
+      "question": "Second Question",
+      "answer": "Second Answer"
+    }
   ]
 }

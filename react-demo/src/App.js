@@ -1,5 +1,5 @@
 import React from 'react';
-import FlashCardContainer from './components/FlashCardContainer';
+import FlashCardContainer from './FlashCardContainer';
 
 function App() {
   return (
