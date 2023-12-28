@@ -36,6 +36,7 @@
   background-color: #3498db;
   color: #fff;
   transform: rotateY(180deg);
+  transform-origin: left; /* Prevent text mirroring */
 }
 
 .status-buttons button {
@@ -51,6 +52,14 @@
 
 .status-buttons button:hover {
   background-color: #27ae60;
+}
+
+.edit-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: rotateY(180deg); /* Ensure the buttons don't mirror during the flip */
+  transform-origin: right; /* Set the transform origin to the right */
 }
 
 .flash-card p {
