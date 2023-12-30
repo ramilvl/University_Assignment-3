@@ -12,7 +12,7 @@ const Home = () => {
         <ul>
             <Link to='/home'>Home</Link>
         
-          <Link to='./flash'>Flashcard</Link>
+            <Link to='./flash'>Flashcard</Link>
         </ul>
       </nav>
     </div>

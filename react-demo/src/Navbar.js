@@ -2,6 +2,9 @@ import "../src/style/home.css";
 import { Outlet, Link } from "react-router-dom";
 const Navbar=()=>{
     return(
+      /*
+      Navigation abr to control the header.
+      */
         <nav>
         <input type="checkbox" id="check" />
         <label htmlFor="check" className="checkbtn">
