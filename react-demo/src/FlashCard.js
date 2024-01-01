@@ -1,38 +1,47 @@
 import React, { useState } from 'react';
-import './style/flashCardStyles.css';
+import FlashCard from './FlashCard';
 
-const FlashCard = ({ frontContent, backContent }) => {
-  const [isFlipped, setFlipped] = useState(false);
-  const [lastModified, setLastModified] = useState(new Date());
-  const [cardStatus, setCardStatus] = useState(''); 
-  const handleClick = () => {
-    setFlipped(!isFlipped);
-    setLastModified(new Date());
-  };
+const FlashCardPage = () => {
+  const initialFlashCards = [
+    {
+      id: 1,
+      frontContent: 'What is the capital of France?',
+      backContent: 'Paris',
+    },
+    {
+      id: 2,
+      frontContent: 'Who wrote "Romeo and Juliet"?',
+      backContent: 'William Shakespeare',
+    },
+  ];
 
-  const handleStatusChange = (newStatus) => {
-    setCardStatus(newStatus);
-    setLastModified(new Date());
+  const [flashCards, setFlashCards] = useState(initialFlashCards);
+
+  const handleCardStatusChange = (cardId, newStatus) => {
+    setFlashCards((prevFlashCards) =>
+      prevFlashCards.map((card) =>
+        card.id === cardId ? { ...card, cardStatus: newStatus, lastModified: new Date() } : card
+      )
+    );
   };
 
   return (
-    <div className={`flash-card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
-      <div className="card-side front">
-        {frontContent}
-        <p>Last Modified: {lastModified.toLocaleString()}</p>
-      </div>
-      <div className="card-side back">
-        {backContent}
-        <p>Last Modified: {lastModified.toLocaleString()}</p>
-        <div className="status-buttons">
-          <button onClick={() => handleStatusChange('Learned')}>Learned</button>
-          <button onClick={() => handleStatusChange('Want to Learn')}>Want to Learn</button>
-          <button onClick={() => handleStatusChange('Noted')}>Noted</button>
-        </div>
-        <p>Status: {cardStatus}</p>
+    <div className="flash-card-page">
+      <h2>Flash Card Page</h2>
+      <div className="flash-cards-container">
+        {flashCards.map((card) => (
+          <FlashCard
+            key={card.id}
+            frontContent={card.frontContent}
+            backContent={card.backContent}
+            lastModified={card.lastModified}
+            cardStatus={card.cardStatus}
+            onStatusChange={(newStatus) => handleCardStatusChange(card.id, newStatus)}
+          />
+        ))}
       </div>
     </div>
   );
 };
 
-export default FlashCard;
+export default FlashCardPage;

@@ -1,23 +1,23 @@
-// import "../src/style/home.css";
-// import { Outlet, Link } from "react-router-dom";
-// const Navbar=()=>{
-//     return(
-//       /*
-//       Navigation abr to control the header.
-//       */
-//         <nav>
-//         <input type="checkbox" id="check" />
-//         <label htmlFor="check" className="checkbtn">
-//           <i className="fas fa-bars" />
-//         </label>
-//         <label className="logo">DesignX</label>
-//         <ul>
-//             <Link to='/home'>Home</Link>
-        
-//           <Link to='./flash'>Flashcard</Link>
-//         </ul>
-//       </nav>
-//     )
-// }
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../src/style/navbar.css';
 
-// export default Navbar;
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/flashcard">FlashCard</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;

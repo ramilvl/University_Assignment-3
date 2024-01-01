@@ -1,83 +1,104 @@
-/* nav{
-    background: #0082e6;
-    height: 80px;
-    width: 100%;
+/* Home.css */
+
+.home-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.home-container h2 {
+  color: #3498db;
+  font-size: 36px;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.home-container p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.home-container .project-list {
+  margin-top: 30px;
+}
+
+.home-container h3 {
+  color: #3498db;
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.home-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.home-container li {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-out;
+}
+
+.home-container a {
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.home-container a:hover {
+  text-decoration: underline;
+  color: #c0392b;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  nav ul{
-    float: right;
-    margin-right: 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  a.active,a:hover{
-    background: #1b9bff;
-    transition: .5s;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  } */
+}
