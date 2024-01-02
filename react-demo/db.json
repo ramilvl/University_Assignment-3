@@ -13,28 +13,10 @@
   ],
   "messages": [
     {
-      "subject": "Testing Subject",
-      "email": "ramil4360616@gmail.com",
-      "content": "Hi World",
+      "subject": "Sorting Algorithms | Insertion Sort",
+      "email": "rv111@mail.ru",
+      "content": "I do not understand the logic of insertion sort!",
       "id": 1
-    },
-    {
-      "subject": "Python",
-      "email": "ramilvali@email.com",
-      "content": "I want to begin to python",
-      "id": 2
-    },
-    {
-      "subject": "Java EE",
-      "email": "rvaliyev11988@ada.edu.az",
-      "content": "I would like to continue with the Spring framework.",
-      "id": 3
-    },
-    {
-      "subject": "Web & Mobile 1",
-      "email": "rvali111@email.com",
-      "content": "HTML, CSS, JS, React",
-      "id": 4
     }
   ],
   "contact": []
