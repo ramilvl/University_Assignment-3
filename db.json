@@ -1,0 +1,82 @@
+{
+  "messages": [
+    {
+      "subject": "Java",
+      "email": "rvaliyev11988@ada.edu.az",
+      "content": "I want to expert in Java programming lang.",
+      "id": 1
+    }
+  ],
+  "cards": [
+    {
+      "id": 1704299739842,
+      "front": "What is OOP?",
+      "back": "Object-Oriented Programming",
+      "status": "Want to Learn",
+      "lastModified": "2024-01-03T16:35:55.678Z"
+    },
+    {
+      "id": 1704299771535,
+      "front": "What does API stand for?",
+      "back": "Application Programming Interface",
+      "status": "Noted",
+      "lastModified": "2024-01-03T20:23:32.041Z"
+    },
+    {
+      "id": 1704299780346,
+      "front": "Explain MVC architecture.",
+      "back": "Model-View-Controller",
+      "status": "Noted",
+      "lastModified": "2024-01-03T20:22:05.510Z"
+    },
+    {
+      "id": 1704299780347,
+      "front": "What is a loop in programming?",
+      "back": "A control flow statement that allows code to be executed repeatedly.",
+      "status": "Learned",
+      "lastModified": "2024-01-03T20:22:02.801Z"
+    },
+    {
+      "id": 1704299780348,
+      "front": "What is Git?",
+      "back": "A distributed version control system.",
+      "status": "Noted",
+      "lastModified": "2024-01-03T20:22:00.616Z"
+    },
+    {
+      "id": 1704299780349,
+      "front": "Difference between stack and heap?",
+      "back": "Stack is used for static memory allocation, and heap for dynamic memory allocation.",
+      "status": "Noted",
+      "lastModified": "2024-01-03T20:21:57.789Z"
+    },
+    {
+      "id": 1704299780350,
+      "front": "What is a constructor in Java?",
+      "back": "A special method that is used to initialize objects.",
+      "status": "Learned",
+      "lastModified": "2024-01-03T20:21:55.567Z"
+    },
+    {
+      "id": 1704299780351,
+      "front": "Difference between abstraction and encapsulation?",
+      "back": "Abstraction is hiding the complexity, while encapsulation is wrapping the data and code.",
+      "status": "Want to Learn",
+      "lastModified": "2024-01-03T20:21:54.396Z"
+    },
+    {
+      "id": 1704299780352,
+      "front": "What is a singleton class?",
+      "back": "A class that allows only one instance of itself to be created.",
+      "status": "Want to Learn",
+      "lastModified": "2024-01-03T20:21:49.049Z"
+    },
+    {
+      "id": 1704299780353,
+      "front": "Explain the term 'polymorphism'.",
+      "back": "The ability of a single function or method to operate on different types of data.",
+      "status": "Learned",
+      "lastModified": "2024-01-03T20:21:44.787Z"
+    }
+  ]
+}
