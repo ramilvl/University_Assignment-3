@@ -1,23 +1,4 @@
 {
-  "flashCards": [
-    {
-      "id": 1,
-      "question": "First Question",
-      "answer": "First Answer"
-    },
-    {
-      "id": 2,
-      "question": "Second Question",
-      "answer": "Second Answer"
-    }
-  ],
-  "messages": [
-    {
-      "subject": "Sorting Algorithms | Insertion Sort",
-      "email": "rv111@mail.ru",
-      "content": "I do not understand the logic of insertion sort!",
-      "id": 1
-    }
-  ],
-  "contact": []
+  "messages": [],
+  "cards": []
 }
