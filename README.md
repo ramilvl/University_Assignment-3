@@ -1,7 +1,8 @@
 # Assignment 3
 
 # GitHub Live
-
+https://ramilvl.github.io/Web_Assignment_3/    <br><br>
+Note: It is recommended to execute the application locally, as it does not retrieve the JSON dataset when accessed through GitHub Pages.  <br><br>
 # Setting Up the React App
 * Prerequisites  <br>
 Make sure you have **Node.js** installed on your machine.
